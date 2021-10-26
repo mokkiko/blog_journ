@@ -1468,3 +1468,296 @@ Processing by ContactsController#new as HTML
 Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 4984)
 
 
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:01:07 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"", "message"=>""}, "commit"=>"Save Contacts"}
+No template found for ContactsController#create, rendering head :no_content
+Completed 204 No Content in 9ms (ActiveRecord: 0.0ms | Allocations: 1543)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:01:55 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 537)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 3777)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.0ms | Allocations: 4868)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:02:27 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"gd", "message"=>"dg"}, "commit"=>"Send message"}
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/create.html.erb within layouts/application
+  Rendered contacts/create.html.erb within layouts/application (Duration: 0.7ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 3181)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 3717)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-10-26 18:03:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/contacts"):
+  
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:03:07 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 600)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 3968)
+Completed 200 OK in 45ms (Views: 41.8ms | Allocations: 5142)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:03:10 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"cas", "message"=>"asd"}, "commit"=>"Send message"}
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/create.html.erb within layouts/application
+  Rendered contacts/create.html.erb within layouts/application (Duration: 1.0ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 3184)
+Completed 200 OK in 25ms (Views: 21.5ms | Allocations: 3730)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:07:05 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 117.0ms | Allocations: 3406)
+Completed 200 OK in 125ms (Views: 123.6ms | Allocations: 3903)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:07:09 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"wqd", "message"=>"dqw"}, "commit"=>"Send message"}
+Completed 500 Internal Server Error in 14ms (Allocations: 2457)
+
+
+  
+NameError (uninitialized constant ContactsController::Contacts):
+  
+app/controllers/contacts_controller.rb:7:in `create'
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:07:25 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 3424)
+Completed 200 OK in 22ms (Views: 20.3ms | Allocations: 3920)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:07:30 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"asd", "message"=>"das"}, "commit"=>"Send message"}
+Completed 500 Internal Server Error in 23ms (Allocations: 2445)
+
+
+  
+NameError (uninitialized constant ContactsController::Contacts):
+  
+app/controllers/contacts_controller.rb:7:in `create'
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:08:19 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 3403)
+Completed 200 OK in 26ms (Views: 24.1ms | Allocations: 3899)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:08:22 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"de", "message"=>"ef"}, "commit"=>"Send message"}
+Completed 500 Internal Server Error in 13ms (Allocations: 2445)
+
+
+  
+NameError (uninitialized constant ContactsController::Contacts):
+  
+app/controllers/contacts_controller.rb:7:in `create'
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:08:43 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 3424)
+Completed 200 OK in 19ms (Views: 17.2ms | Allocations: 3920)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:08:45 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"g", "message"=>"nnh"}, "commit"=>"Send message"}
+Completed 400 Bad Request in 15ms (Allocations: 878)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: contact
+Did you mean?  contacts
+               controller
+               commit
+               action):
+  
+app/controllers/contacts_controller.rb:13:in `contact_params'
+app/controllers/contacts_controller.rb:7:in `create'
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:10:50 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"g", "message"=>"nnh"}, "commit"=>"Send message"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/contacts_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/create.html.erb within layouts/application
+  Rendered contacts/create.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 3089)
+Completed 200 OK in 56ms (Views: 18.7ms | ActiveRecord: 2.4ms | Allocations: 7719)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:11:24 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 3397)
+Completed 200 OK in 20ms (Views: 18.4ms | Allocations: 3894)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:11:29 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"tnt", "message"=>"235"}, "commit"=>"Send message"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/contacts_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/contacts_controller.rb:8:in `create'
+  [1m[36mContact Create (80.6ms)[0m  [1m[32mINSERT INTO "contacts" ("email", "message", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "tnt"], ["message", "235"], ["created_at", "2021-10-26 15:11:29.122696"], ["updated_at", "2021-10-26 15:11:29.122696"]]
+  ↳ app/controllers/contacts_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (254.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/contacts_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/create.html.erb within layouts/application
+  Rendered contacts/create.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 3115)
+Completed 200 OK in 464ms (Views: 14.5ms | ActiveRecord: 340.2ms | Allocations: 11318)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:11:31 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 3421)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms | Allocations: 3796)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:11:35 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"wrer", "message"=>"twe"}, "commit"=>"Send message"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/contacts_controller.rb:8:in `create'
+  [1m[36mContact Create (11.1ms)[0m  [1m[32mINSERT INTO "contacts" ("email", "message", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "wrer"], ["message", "twe"], ["created_at", "2021-10-26 15:11:35.440071"], ["updated_at", "2021-10-26 15:11:35.440071"]]
+  ↳ app/controllers/contacts_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (150.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/contacts_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/create.html.erb within layouts/application
+  Rendered contacts/create.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3115)
+Completed 200 OK in 203ms (Views: 14.1ms | ActiveRecord: 161.5ms | Allocations: 7822)
+
+
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:16:29 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 3397)
+Completed 200 OK in 34ms (Views: 32.1ms | Allocations: 3894)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:16:46 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"new", "message"=>"hi earth citizens"}, "commit"=>"Send message"}
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/contacts_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/contacts_controller.rb:9:in `create'
+  [1m[36mContact Create (0.9ms)[0m  [1m[32mINSERT INTO "contacts" ("email", "message", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "new"], ["message", "hi earth citizens"], ["created_at", "2021-10-26 15:16:47.060942"], ["updated_at", "2021-10-26 15:16:47.060942"]]
+  ↳ app/controllers/contacts_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (134.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/contacts_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/create.html.erb within layouts/application
+  Rendered contacts/create.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 3121)
+Completed 200 OK in 236ms (Views: 15.9ms | ActiveRecord: 138.5ms | Allocations: 11389)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:16:51 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 3409)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 3784)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:16:53 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"gg", "message"=>""}, "commit"=>"Send message"}
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 340)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 3411)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 0.0ms | Allocations: 3902)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-10-26 18:17:36 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/contacts"):
+  
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:22:56 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 102.9ms | Allocations: 9653)
+Completed 200 OK in 106ms (Views: 104.3ms | Allocations: 10028)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-10-26 18:22:59 +0300
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "contacts"=>{"email"=>"gfn", "message"=>""}, "commit"=>"Send message"}
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 340)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3405)
+Completed 200 OK in 19ms (Views: 16.4ms | Allocations: 3892)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2021-10-26 18:23:04 +0300
+Processing by ContactsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 3404)
+Completed 200 OK in 24ms (Views: 21.6ms | Allocations: 3778)
+
+
