@@ -597,3 +597,43 @@ Processing by ArticlesController#new as HTML
 Completed 200 OK in 163ms (Views: 158.8ms | Allocations: 9219)
 
 
+Started GET "/articles/new" for 127.0.0.1 at 2021-10-26 15:39:45 +0300
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 546)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 3736)
+Completed 200 OK in 43ms (Views: 38.7ms | Allocations: 4826)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2021-10-26 15:40:58 +0300
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 566)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 3745)
+Completed 200 OK in 55ms (Views: 51.2ms | Allocations: 4828)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2021-10-26 15:41:31 +0300
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 707)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 3885)
+Completed 200 OK in 42ms (Views: 35.0ms | Allocations: 4969)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2021-10-26 15:41:39 +0300
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 680)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 3870)
+Completed 200 OK in 42ms (Views: 37.2ms | Allocations: 4960)
+
+
