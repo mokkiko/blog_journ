@@ -1,17 +1,28 @@
+<!--1^38^00-->
 <h1>Contact Us</h1>
 
 <%= form_for :contacts, url: contacts_path do |f| %>
+  <% if @contact && @contact.errors.any?%>
+
+    <p>
+      <ul>
+        <%= @contact.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </p>
+  <% end %>
   <p>
     <%= f.label :email %> <br>
-    <%= f.text_field :email  %>
+    <%= f.text_field :email %>
   </p>
 
   <p>
     <%= f.label :message %> <br>
-    <%= f.text_field :message  %>
+    <%= f.text_field :message %>
   </p>
   <p>
-    <%= f.submit 'Send message'%>
+    <%= f.submit 'Send message' %>
   </p>
 
 
