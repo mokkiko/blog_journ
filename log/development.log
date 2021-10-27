@@ -3453,3 +3453,17 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.5ms | Allocations: 4977)
 
 
+Started GET "/pages/terms" for 127.0.0.1 at 2021-10-27 15:20:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pages/terms"):
+  
+Started GET "/terms" for 127.0.0.1 at 2021-10-27 15:21:13 +0300
+Processing by PagesController#terms as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/terms.html.erb within layouts/application
+  Rendered pages/terms.html.erb within layouts/application (Duration: 1.1ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 245.6ms | Allocations: 13996)
+Completed 200 OK in 285ms (Views: 281.0ms | Allocations: 15091)
+
+

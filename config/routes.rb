@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   resources :articles
   get 'article/new'
 
+  get 'terms' => 'pages#terms'
+  get 'about' => 'pages#about'
+
 
 
 
