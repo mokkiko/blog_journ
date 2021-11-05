@@ -16,6 +16,7 @@
 
     <%= link_to 'Destroooooy', article_path(art), method: :delete, data: { confirm: 'Are you sure?'}%>
   </p>
+      <i>
 <h3> commetns!</h3>
       <p>
         <% @comments.each do |com| %>
@@ -26,5 +27,6 @@
           <h6><%= com.body %></h6>
 
         <% end %>
+      </i>
   <hr />
 <% end %>
