@@ -4873,3 +4873,496 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 60ms (Views: 51.2ms | ActiveRecord: 0.7ms | Allocations: 6855)
 
 
+Started GET "/articles" for 127.0.0.1 at 2021-11-05 15:22:02 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mArticle Load (16.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (20.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 66.7ms | Allocations: 2783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 82.0ms | Allocations: 5962)
+Completed 200 OK in 87ms (Views: 83.4ms | ActiveRecord: 37.3ms | Allocations: 6504)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2021-11-05 15:22:06 +0300
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:27:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (Duration: 72.0ms | Allocations: 685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.9ms | Allocations: 3859)
+Completed 200 OK in 105ms (Views: 98.2ms | ActiveRecord: 0.5ms | Allocations: 4914)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2021-11-05 15:22:10 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (21.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:9
+  Rendered articles/show.html.erb within layouts/application (Duration: 37.1ms | Allocations: 1620)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 4807)
+Completed 200 OK in 66ms (Views: 31.7ms | ActiveRecord: 22.1ms | Allocations: 5738)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-05 15:37:06 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 33.1ms | Allocations: 224)
+Completed 200 OK in 80ms (Views: 39.5ms | Allocations: 877)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-06 12:13:29 +0300
+  [1m[35m (15.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 68.0ms | Allocations: 337)
+Completed 200 OK in 354ms (Views: 88.2ms | ActiveRecord: 0.0ms | Allocations: 2516)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:13:41 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (20.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (14.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 110.4ms | Allocations: 7555)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 353.3ms | Allocations: 14016)
+Completed 200 OK in 682ms (Views: 343.4ms | ActiveRecord: 38.9ms | Allocations: 17422)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2021-11-06 12:14:47 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (18.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:9
+  Rendered articles/show.html.erb within layouts/application (Duration: 306.3ms | Allocations: 6834)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 318.4ms | Allocations: 9913)
+Completed 200 OK in 382ms (Views: 300.9ms | ActiveRecord: 19.9ms | Allocations: 12962)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2021-11-06 12:15:42 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 2]]
+  ↳ app/views/articles/show.html.erb:9
+  Rendered articles/show.html.erb within layouts/application (Duration: 14.9ms | Allocations: 1542)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 4717)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 1.0ms | Allocations: 5648)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2021-11-06 12:15:50 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 9]]
+  ↳ app/views/articles/show.html.erb:9
+  Rendered articles/show.html.erb within layouts/application (Duration: 41.1ms | Allocations: 1521)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 4706)
+Completed 200 OK in 62ms (Views: 55.9ms | ActiveRecord: 0.8ms | Allocations: 5620)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:18:12 +0300
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/articles_controller.rb:5:in `index'
+Completed 404 Not Found in 151ms (ActiveRecord: 3.2ms | Allocations: 2404)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Comment without an ID):
+  
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:23:42 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 84.5ms | Allocations: 11938)
+  Rendered layout layouts/application.html.erb (Duration: 85.6ms | Allocations: 12002)
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 5.2ms | Allocations: 14281)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `article' for #<ActionView::Base:0x0000000000c698>
+Did you mean?  @articles):
+    20: <h3> commetns!</h3>
+    21:       <p>
+    22:         <% @comments.each do |com| %>
+    23:           <% if com.article_id == article.id %>
+    24:           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    25:           <% end %>
+    26:           <h6><%= com.author %></h6>
+  
+app/views/articles/index.html.erb:23
+app/views/articles/index.html.erb:22
+app/views/articles/index.html.erb:5
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:24:01 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 19.9ms | Allocations: 3292)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 3356)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.9ms | Allocations: 4448)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    20: <h3> commetns!</h3>
+    21:       <p>
+    22:         <% @comments.each do |com| %>
+    23:           <% if com.article_id == @article.id %>
+    24:           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    25:           <% end %>
+    26:           <h6><%= com.author %></h6>
+  
+app/views/articles/index.html.erb:23
+app/views/articles/index.html.erb:22
+app/views/articles/index.html.erb:5
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:24:25 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 2087)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 186.3ms | Allocations: 5574)
+Completed 200 OK in 194ms (Views: 190.5ms | ActiveRecord: 0.7ms | Allocations: 6701)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:25:25 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 2096)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 5444)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.8ms | Allocations: 6556)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:26:04 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (5.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 43.1ms | Allocations: 3270)
+  Rendered layout layouts/application.html.erb (Duration: 44.6ms | Allocations: 3334)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 6.0ms | Allocations: 4418)
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil:NilClass):
+    28: *****
+    29:           <h6><%= com.body %></h6>
+    30:           <% end %>
+    31:           <% x = x + 1 %>
+    32:         <% end %>
+    33:       </i>
+    34:   <hr />
+  
+app/views/articles/index.html.erb:31
+app/views/articles/index.html.erb:22
+app/views/articles/index.html.erb:5
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:45:43 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 27.6ms | Allocations: 2778)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 6138)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 3.3ms | Allocations: 7255)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:46:38 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 31.8ms | Allocations: 2058)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.3ms | Allocations: 5406)
+Completed 200 OK in 78ms (Views: 71.7ms | ActiveRecord: 0.8ms | Allocations: 6518)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:47:37 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 50.4ms | Allocations: 2060)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 99.2ms | Allocations: 5834)
+Completed 200 OK in 129ms (Views: 121.2ms | ActiveRecord: 0.7ms | Allocations: 6947)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:49:11 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 32.0ms | Allocations: 2058)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 5406)
+Completed 200 OK in 73ms (Views: 68.9ms | ActiveRecord: 0.9ms | Allocations: 6523)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:50:11 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 21.5ms | Allocations: 2107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 5456)
+Completed 200 OK in 47ms (Views: 42.0ms | ActiveRecord: 1.0ms | Allocations: 6568)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:50:40 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 33.7ms | Allocations: 1771)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 77.2ms | Allocations: 4957)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.8ms | Allocations: 5358)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:53:59 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 2127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 5487)
+Completed 200 OK in 41ms (Views: 36.3ms | ActiveRecord: 0.6ms | Allocations: 6605)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:54:27 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 17.0ms | Allocations: 2133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 5481)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.7ms | Allocations: 6598)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:54:48 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 2166)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 5514)
+Completed 200 OK in 52ms (Views: 42.9ms | ActiveRecord: 1.1ms | Allocations: 6626)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:55:44 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 2169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 5531)
+Completed 200 OK in 44ms (Views: 37.6ms | ActiveRecord: 0.9ms | Allocations: 6656)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:56:13 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 22.3ms | Allocations: 2166)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 5526)
+Completed 200 OK in 54ms (Views: 50.3ms | ActiveRecord: 1.1ms | Allocations: 6644)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:58:20 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 2165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 5513)
+Completed 200 OK in 43ms (Views: 39.2ms | ActiveRecord: 0.9ms | Allocations: 6630)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 12:59:46 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 2189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 5537)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.7ms | Allocations: 6649)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 13:00:09 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 2118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 79.2ms | Allocations: 5478)
+Completed 200 OK in 87ms (Views: 83.3ms | ActiveRecord: 0.7ms | Allocations: 6591)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 13:01:16 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 2123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 5483)
+Completed 200 OK in 41ms (Views: 34.7ms | ActiveRecord: 1.7ms | Allocations: 6601)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 13:01:38 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 2119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 5467)
+Completed 200 OK in 40ms (Views: 36.0ms | ActiveRecord: 0.7ms | Allocations: 6584)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 13:02:26 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 2119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 5467)
+Completed 200 OK in 43ms (Views: 38.7ms | ActiveRecord: 0.8ms | Allocations: 6579)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-06 13:02:37 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:6
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:23
+  Rendered articles/index.html.erb within layouts/application (Duration: 40.1ms | Allocations: 2119)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 5482)
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 0.8ms | Allocations: 6595)
+
+
