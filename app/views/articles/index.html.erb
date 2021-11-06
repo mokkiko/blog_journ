@@ -1,7 +1,6 @@
-
 <% @xxx = 1 %>
-    <h2>List of articles</h2>
-    <h4> <%= link_to 'add New article', new_article_path %> </h4>
+<h2>List of articles</h2>
+<h4> <%= link_to 'add New article', new_article_path %> </h4>
 
 <% @articles.each do |art| %>
 
@@ -15,27 +14,26 @@
 
     <%= link_to 'Edit', edit_article_path(art) %>  |
 
-    <%= link_to 'Destroooooy', article_path(art), method: :delete, data: { confirm: 'Are you sure?'}%>
+    <%= link_to 'Destroooooy', article_path(art), method: :delete, data: { confirm: 'Are you sure?' } %>
   </p>
-      <i>
-        <h3> comments.....</h3>
-      <p>
-        <% @comments.each do |com| %>
-         <%#=  com.article_id %>
-          <%#= @xxx %>
-          <p></p>
+  <i>
+    <h3> comments.....</h3>
+    <p>
+      <% @comments.each do |com| %>
 
-          <% if com.article_id == @xxx %>
+      <p></p>
+
+      <% if com.article_id == @xxx %>
 
 
-          <h6><%= com.author %> said-</h6>
-          <p>
+        <h6><%= com.author %> said-</h6>
+        <p>
 
-          <h6><%= com.body %></h6>
-          <% end %>
+        <h6><%= com.body %></h6>
+      <% end %>
 
-        <% end %>
-        <% @xxx = @xxx + 1 %>
-      </i>
-  <hr />
+    <% end %>
+    <% @xxx = @xxx + 1 %>
+  </i>
+  <hr/>
 <% end %>
