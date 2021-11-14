@@ -6311,3 +6311,62 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 233ms (Views: 170.1ms | ActiveRecord: 5.9ms | Allocations: 14087)
 
 
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-14 12:41:26 +0300
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 39ms (ActiveRecord: 1.5ms | Allocations: 5882)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 12:41:26 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 3542)
+Completed 200 OK in 82ms (Views: 79.0ms | ActiveRecord: 0.0ms | Allocations: 4814)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-11-14 12:41:29 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms | Allocations: 2243)
+
+
+  
+NoMethodError (undefined method `for' for #<Devise::ParameterSanitizer:0x0000560e80b73f38>):
+  
+app/controllers/application_controller.rb:9:in `configure_permitted_parameters'
+Started GET "/" for 127.0.0.1 at 2021-11-14 12:43:53 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 3243)
+Completed 200 OK in 46ms (Views: 41.3ms | Allocations: 4295)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-11-14 12:43:54 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 232ms (ActiveRecord: 51.3ms | Allocations: 7658)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 12:43:54 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3248)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 3635)
+
+
