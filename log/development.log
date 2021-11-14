@@ -5694,3 +5694,138 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 30ms (Views: 27.0ms | Allocations: 4824)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-14 11:24:02 +0300
+  [1m[35m (12.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 217.0ms | Allocations: 6759)
+Completed 200 OK in 273ms (Views: 227.0ms | ActiveRecord: 0.0ms | Allocations: 9453)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-11-14 11:24:14 +0300
+Processing by ArticlesController#index as HTML
+Completed 401 Unauthorized in 22ms (ActiveRecord: 0.0ms | Allocations: 912)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-14 11:24:14 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 3.3ms | Allocations: 616)
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 57.1ms | Allocations: 2781)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.2ms | Allocations: 5971)
+Completed 200 OK in 121ms (Views: 75.3ms | ActiveRecord: 3.7ms | Allocations: 12298)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 11:24:41 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3248)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 3632)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-14 11:24:44 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 4.0ms | Allocations: 156)
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 1016)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.3ms | Allocations: 4239)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 0.0ms | Allocations: 4836)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-11-14 11:24:53 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"vc@vc.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (34.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "vc@vc.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 216ms (ActiveRecord: 34.5ms | Allocations: 3779)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"vc@vc.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 156)
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1011)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 4191)
+Completed 200 OK in 520ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 5728)
+
+
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mArticle Load (15.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (34.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "max@mail.ru"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "max@mail.ru"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-11-14 11:40:39 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 3.7ms | Allocations: 228)
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 148)
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 26.0ms | Allocations: 1945)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 169.1ms | Allocations: 5147)
+Completed 200 OK in 228ms (Views: 195.1ms | ActiveRecord: 1.0ms | Allocations: 10667)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2021-11-14 11:40:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-11-14 11:42:26 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 222)
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 8.6ms | Allocations: 490)
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 23.3ms | Allocations: 2462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 6033)
+Completed 200 OK in 53ms (Views: 49.0ms | ActiveRecord: 0.0ms | Allocations: 7971)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-11-14 11:42:29 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 481)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 11:42:29 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 35.7ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.4ms | Allocations: 3317)
+Completed 200 OK in 100ms (Views: 61.6ms | ActiveRecord: 0.0ms | Allocations: 4299)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-14 11:42:32 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 170)
+  Rendered /home/mokkiko/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 56.7ms | Allocations: 1324)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 4566)
+Completed 200 OK in 104ms (Views: 101.2ms | ActiveRecord: 0.0ms | Allocations: 5818)
+
+
