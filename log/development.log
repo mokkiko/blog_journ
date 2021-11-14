@@ -6643,3 +6643,116 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 3711)
 
 
+Started GET "/articles" for 127.0.0.1 at 2021-11-14 12:58:28 +0300
+Processing by ArticlesController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 243)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-14 12:58:29 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 528)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1808)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 5329)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.0ms | Allocations: 7003)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 12:59:09 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 4486)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.3ms | Allocations: 5678)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-11-14 12:59:13 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.3ms | Allocations: 1703)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 12:59:13 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3358)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 3745)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-14 12:59:15 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.3ms | Allocations: 528)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.9ms | Allocations: 1800)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 5104)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.0ms | Allocations: 6620)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-11-14 12:59:18 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"max@max.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "max@max.ru"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 399ms (ActiveRecord: 0.4ms | Allocations: 3254)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 12:59:18 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 4149)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.3ms | Allocations: 4540)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 13:00:13 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 4505)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.3ms | Allocations: 5698)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 13:00:42 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 4664)
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 0.4ms | Allocations: 5857)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 13:01:02 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 4519)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.5ms | Allocations: 5713)
+
+
