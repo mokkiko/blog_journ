@@ -6830,3 +6830,147 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 224ms (Views: 163.4ms | ActiveRecord: 4.2ms | Allocations: 12425)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-16 17:39:28 +0300
+  [1m[35m (34.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 86.6ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1272.5ms | Allocations: 7032)
+Completed 200 OK in 1726ms (Views: 1365.5ms | ActiveRecord: 0.0ms | Allocations: 10354)
+
+
+Started GET "/vendor/bootstrap/css/bootstrap.min.css" for 127.0.0.1 at 2021-11-16 17:39:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/css/bootstrap.min.css"):
+  
+Started GET "/vendor/bootstrap/js/bootstrap.min.js" for 127.0.0.1 at 2021-11-16 17:39:33 +0300
+Started GET "/vendor/jquery-1.9.1.min.js" for 127.0.0.1 at 2021-11-16 17:39:33 +0300
+Started GET "/jquery.simplecolorpicker.js" for 127.0.0.1 at 2021-11-16 17:39:33 +0300
+Started GET "/jquery.simplecolorpicker.css" for 127.0.0.1 at 2021-11-16 17:39:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.simplecolorpicker.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.simplecolorpicker.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/jquery-1.9.1.min.js"):
+  
+Started GET "/jquery.datetimepicker.css" for 127.0.0.1 at 2021-11-16 17:39:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.datetimepicker.css"):
+  
+Started GET "/vendor/bootstrap/css/bootstrap.min.css" for 127.0.0.1 at 2021-11-16 17:39:37 +0300
+Started GET "/vendor/jquery-1.9.1.min.js" for 127.0.0.1 at 2021-11-16 17:39:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/css/bootstrap.min.css"):
+  
+Started GET "/jquery.datetimepicker.js" for 127.0.0.1 at 2021-11-16 17:39:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/jquery-1.9.1.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.datetimepicker.js"):
+  
+Started GET "/vendor/bootstrap/js/bootstrap.min.js" for 127.0.0.1 at 2021-11-16 17:39:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/js/bootstrap.min.js"):
+  
+Started GET "/jquery.simplecolorpicker.js" for 127.0.0.1 at 2021-11-16 17:39:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.simplecolorpicker.js"):
+  
+Started GET "/jquery.simplecolorpicker.css" for 127.0.0.1 at 2021-11-16 17:39:38 +0300
+Started GET "/jquery.datetimepicker.js" for 127.0.0.1 at 2021-11-16 17:39:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.simplecolorpicker.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.datetimepicker.js"):
+  
+Started GET "/jquery.datetimepicker.css" for 127.0.0.1 at 2021-11-16 17:39:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.datetimepicker.css"):
+  
+Started GET "/" for 127.0.0.1 at 2021-11-16 17:41:38 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 210.7ms | Allocations: 3936)
+Completed 200 OK in 403ms (Views: 294.1ms | ActiveRecord: 0.0ms | Allocations: 5211)
+
+
+Started GET "/vendor/jquery-1.9.1.min.js" for 127.0.0.1 at 2021-11-16 17:41:40 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/jquery-1.9.1.min.js"):
+  
+Started GET "/jquery.simplecolorpicker.css" for 127.0.0.1 at 2021-11-16 17:41:40 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.simplecolorpicker.css"):
+  
+Started GET "/vendor/bootstrap/js/bootstrap.min.js" for 127.0.0.1 at 2021-11-16 17:41:40 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/js/bootstrap.min.js"):
+  
+Started GET "/vendor/bootstrap/css/bootstrap.min.css" for 127.0.0.1 at 2021-11-16 17:41:40 +0300
+Started GET "/jquery.simplecolorpicker.js" for 127.0.0.1 at 2021-11-16 17:41:40 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.simplecolorpicker.js"):
+  
+Started GET "/jquery.datetimepicker.css" for 127.0.0.1 at 2021-11-16 17:41:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.datetimepicker.css"):
+  
+Started GET "/vendor/bootstrap/css/bootstrap.min.css" for 127.0.0.1 at 2021-11-16 17:41:42 +0300
+Started GET "/vendor/jquery-1.9.1.min.js" for 127.0.0.1 at 2021-11-16 17:41:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/css/bootstrap.min.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/jquery-1.9.1.min.js"):
+  
+Started GET "/jquery.datetimepicker.js" for 127.0.0.1 at 2021-11-16 17:41:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.datetimepicker.js"):
+  
+Started GET "/vendor/bootstrap/js/bootstrap.min.js" for 127.0.0.1 at 2021-11-16 17:41:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/vendor/bootstrap/js/bootstrap.min.js"):
+  
+Started GET "/jquery.simplecolorpicker.js" for 127.0.0.1 at 2021-11-16 17:41:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.simplecolorpicker.js"):
+  
+Started GET "/jquery.datetimepicker.js" for 127.0.0.1 at 2021-11-16 17:41:43 +0300
+Started GET "/jquery.simplecolorpicker.css" for 127.0.0.1 at 2021-11-16 17:41:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.datetimepicker.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.simplecolorpicker.css"):
+  
+Started GET "/jquery.datetimepicker.css" for 127.0.0.1 at 2021-11-16 17:41:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/jquery.datetimepicker.css"):
+  
+Started GET "/" for 127.0.0.1 at 2021-11-16 17:45:25 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 245.1ms | Allocations: 3760)
+Completed 200 OK in 440ms (Views: 350.9ms | Allocations: 4951)
+
+
