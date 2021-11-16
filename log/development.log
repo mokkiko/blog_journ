@@ -6756,3 +6756,77 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.5ms | Allocations: 5713)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-14 13:03:38 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 4533)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.4ms | Allocations: 5721)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 13:03:57 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 4538)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.4ms | Allocations: 5725)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 13:07:16 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 19.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/layouts/application.html.erb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 154.3ms | Allocations: 9533)
+Completed 200 OK in 168ms (Views: 160.7ms | ActiveRecord: 5.4ms | Allocations: 11274)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-11-14 13:07:17 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.3ms | Allocations: 1951)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-14 13:07:17 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3358)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 3745)
+
+
+Started GET "/artilces" for 127.0.0.1 at 2021-11-14 13:07:27 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/artilces"):
+  
+Started GET "/articles" for 127.0.0.1 at 2021-11-14 13:07:38 +0300
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:5
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/articles/index.html.erb:22
+  Rendered articles/index.html.erb within layouts/application (Duration: 133.3ms | Allocations: 7066)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 159.3ms | Allocations: 10371)
+Completed 200 OK in 224ms (Views: 163.4ms | ActiveRecord: 4.2ms | Allocations: 12425)
+
+
