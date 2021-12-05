@@ -33,14 +33,33 @@
     <% end %>
 
   </h2>
-  <div class="btn-group" role="group" aria-label="Basic example">
-    <%= link_to 'contacts', terms_path %>
-    <button type="button" class="btn btn-outline-secondary">Left</button>
-    <button type="button" class="btn btn-outline-secondary">Middle</button>
-    <button type="button" class="btn btn-outline-secondary">Right</button>
+
+  <br>
+
+  <div class="col-xs-3">
+
   </div>
+  <div class="col-xs-6">
+    <div class="btn-group" role="group" aria-label="Basic example">
+
+      <button type="button" class="btn btn-outline-secondary">Left</button>
+      <button type="button" class="btn btn-outline-secondary">Middle</button>
+      <button type="button" class="btn btn-outline-secondary">Right</button>
+    </div>
+    <br>
+    <h2> <%= link_to 'Articles list', articles_path %> | <%= link_to 'contacts', contacts_path %> | <%= link_to 'Terms', terms_path %> | <%= link_to 'About', about_path %></h2>
+
+
+  </div>
+  <div class="col-xs-3">
+
+  </div>
+
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
+<br>
+
+
 
   <%= yield %>
   </body>

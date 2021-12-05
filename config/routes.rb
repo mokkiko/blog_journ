@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: "home#index"
 
 
-  resource :contacts, only: [:new, :create]
+  resource :contacts, only: [:new, :create, :show]
 
   resources :articles do
     resources :comments

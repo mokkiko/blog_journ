@@ -2,6 +2,9 @@ class ContactsController < ApplicationController
 
   def new
   end
+  
+  def show
+  end
 
   def create
     @contact = Contact.new(contact_params)
