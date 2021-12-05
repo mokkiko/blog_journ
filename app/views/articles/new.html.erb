@@ -1,17 +1,25 @@
-<h1>d2</h1>
-<%= form_for :articles, url: articles_path do |f| %>
-  <p>
-      <%= f.label :title %> <br>
-      <%= f.text_field :title  %>
-  </p>
+<div class="container">
+  <div class="row">
 
-  <p>
-    <%= f.label :text %> <br>
-    <%= f.text_field :text  %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+    <h1>let`s write new Article</h1>
+    <%= form_for :articles, url: articles_path do |f| %>
+      <p>
+          <%= f.label :title %> <br>
+          <%= f.text_field :title %>
+      </p>
+
+      <p>
+        <%= f.label :text %> <br>
+        <%= f.text_field :text  %>
+      </p>
+      <p>
+        <%= f.submit %>
+      </p>
 
 
-<% end %>
+    <% end %>
+
+
+  </div>
+
+</div>

@@ -1,17 +1,25 @@
-<h1>Edit Article</h1>
-<%= form_for :articles, url: article_path(@article), method: :put do |f| %>
-  <p>
-    <%= f.label :title %> <br>
-    <%= f.text_field :title  %>
-  </p>
+<div class="container">
 
-  <p>
-    <%= f.label :text %> <br>
-    <%= f.text_field :text  %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+  <div class="row">
 
 
-<% end %>
+    <h1>Edit Article</h1>
+    <%= form_for :articles, url: article_path(@article), method: :put do |f| %>
+      <p>
+        <%= f.label :title %> <br>
+        <%= f.text_field :title  %>
+      </p>
+
+      <p>
+        <%= f.label :text %> <br>
+        <%= f.text_field :text  %>
+      </p>
+      <p>
+        <%= f.submit %>
+      </p>
+
+
+    <% end %>
+
+</div>
+</div>

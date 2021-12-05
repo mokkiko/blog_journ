@@ -1,39 +1,61 @@
-<% @xxx = 1 %>
-<h2>List of articles</h2>
-<h4> <%= link_to 'add New article', new_article_path %> </h4>
+<div class="container">
+    <div class="row">
 
-<% @articles.each do |art| %>
+      <div class="col-xs-4">
+      </div>
 
-  <h3><%= art.title %></h3>
-  <p>
+      <div class="col-xs-8">
+        <h2><i>List of articles</i></h2>
+        <h4> <%= link_to 'add New article', new_article_path %> </h4>
+      </div>
 
-  <h4><%= art.text %></h4>
-  </p>
-  <p>
-    <%= link_to 'Show', article_path(art) %>  |
+    </div>
 
-    <%= link_to 'Edit', edit_article_path(art) %>  |
+  <div class="row">
 
-    <%= link_to 'Destroooooy', article_path(art), method: :delete, data: { confirm: 'Are you sure?' } %>
-  </p>
-  <i>
-    <h3> comments.....</h3>
-    <p>
-      <% @comments.each do |com| %>
+    <div class="col-xs-2">
+    </div>
 
-      <p></p>
+    <div class="col-xs-8">
+      <% @xxx = 1 %>
 
-      <% if com.article_id == @xxx %>
+      <% @articles.each do |art| %>
 
-
-        <h6><%= com.author %> said-</h6>
+        <h3><%= art.title %></h3>
+        <p> <h4><%= art.text %></h4> </p>
         <p>
+          <%= link_to 'Show', article_path(art) %>  |
 
-        <h6><%= com.body %></h6>
+          <%= link_to 'Edit', edit_article_path(art) %>  |
+
+          <%= link_to 'Destroooooy', article_path(art), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </p>
+        <i>
+          <h3> comments.....</h3>
+          <p>
+            <% @comments.each do |com| %>
+
+            <p></p>
+
+            <% if com.article_id == @xxx %>
+
+
+              <h6><%= com.author %> said-</h6>
+              <p>
+
+              <h6><%= com.body %></h6>
+            <% end %>
+
+          <% end %>
+          <% @xxx = @xxx + 1 %>
+        </i>
+        <hr/>
       <% end %>
+    </div>
 
-    <% end %>
-    <% @xxx = @xxx + 1 %>
-  </i>
-  <hr/>
-<% end %>
+    <div class="col-xs-2">
+    </div>
+
+  </div>
+
+</div>

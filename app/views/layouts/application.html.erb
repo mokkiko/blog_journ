@@ -21,23 +21,25 @@
 
   <body
   <p> </p>
-  
+
 <div class="container">
     <div class="row">
         <div class="col-xs-6">
-          <h2>
+          <h4>
+            <b>
             <% if user_signed_in? %>
 
               <%= current_user.email %>
               ...
               <%= current_user.username %>
+              ___
               <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
-
+              __
               <% else %>
             <%= link_to 'Sign in', new_user_session_path %>
             <% end %>
-
-          </h2>
+            </b>
+          </h4>
         </div>
 
         <div class="col-xs-3">

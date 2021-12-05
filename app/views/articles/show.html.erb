@@ -1,31 +1,33 @@
-<h1><%= @article.title %></h1>
-<p>
+ <div class="container">
 
-  <h2><%= @article.text %></h2>
-</p>
 
-<i>
- <h3> Comments </h3>
-  <% @article.comments.each do |com| %>
-      <%= com.author %> said: <br />
+
+    <h1><%= @article.title %></h1>
+    <p><h2><%= @article.text %></h2></p>
+    <i>
+     <h3> Comments </h3>
+      <% @article.comments.each do |com| %>
+          <%= com.author %> said: <br />
+          <p>
+           <%= com.body %>
+          </p>
+      <% end %>
+    </i>
+    <%= form_for ([@article, @article.comments.build]) do |f| %>
       <p>
-       <%= com.body %>
+      <p>
+        <%= f.label :author %> <br>
+        <%= f.text_field :author  %>
       </p>
-  <% end %>
-</i>
-<%= form_for ([@article, @article.comments.build]) do |f| %>
-  <p>
-  <p>
-    <%= f.label :author %> <br>
-    <%= f.text_field :author  %>
-  </p>
 
-  <p>
-    <%= f.label :body %> <br>
-    <%= f.text_field :body  %>
-  </p>
-    <%= f.submit %>
-  </p>
+      <p>
+        <%= f.label :body %> <br>
+        <%= f.text_field :body  %>
+      </p>
+        <%= f.submit %>
+      </p>
 
 
-<% end %>
+    <% end %>
+
+ </div>
